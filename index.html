@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="pingback" href="https://www.freshie.farm/xmlrpc.php" />
     <link rel="stylesheet" href="" />
     <script type="text/javascript">
       document.documentElement.className = "js";
@@ -16900,7 +16899,7 @@
       .et_pb_blurb_2 .et-pb-icon,
       .et_pb_blurb_3 .et-pb-icon {
         font-size: 44px;
-        color: #1a0e51;
+        color: #ffffff;
         font-family: FontAwesome !important;
         font-weight: 400 !important;
       }
@@ -16957,6 +16956,7 @@
       href="https://www.freshie.farm/wp-content/et-cache/2/et-core-unified-tb-992-tb-27-deferred-2.min.css?ver=1710142319"
       onload="this.onload=null;this.rel='stylesheet';"
     />
+    <link rel="shortcut icon" href="/assets/logoSmall.png" type="image/x-icon">
   </head>
   <body
     class="home page-template-default page page-id-2 wp-custom-logo theme-Divi et-tb-has-template et-tb-has-header et-tb-has-footer woocommerce-no-js et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db"
@@ -17140,7 +17140,7 @@
                                 class="et_pb_menu_page_id-908 menu-item menu-item-type-post_type menu-item-object-page menu-item-916"
                               >
                                 <a href="blogs/blog.html"
-                                  >ভ্লগ</a
+                                  >ব্লগ</a
                                 >
                               </li>
                               <!-- <li
@@ -17335,7 +17335,20 @@
                         </div>
                       </div>
                     </div>
-                    <div
+                    
+
+
+
+                    <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider">
+                      <div class="et_pb_row et_pb_row_3 et_pb_slider_container">
+                          <!-- Your blurb items here -->
+
+                  
+
+
+
+
+                  <div
                       class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular section_has_divider et_pb_bottom_divider"
                     >
                       <div class="et_pb_row et_pb_row_3">
@@ -17466,6 +17479,9 @@
                         class="et_pb_bottom_inside_divider et-no-transition"
                       ></div>
                     </div>
+                  </div>
+                  <div class="et_pb_bottom_inside_divider" style=""></div>
+              </div>
                     <div
                       class="et_pb_with_border et_pb_section et_pb_section_4 et_pb_with_background et_section_regular"
                     >
@@ -19392,6 +19408,98 @@ div.et_pb_section.et_pb_section_9 {
 div.et_pb_section.et_pb_section_0_tb_footer {
   background-image: linear-gradient(359deg,rgba(10,5,1,0.66) 0%,rgba(10,0,0,0.71) 100%),url(assets/hero4.jpeg) !important;
 }
+.et_pb_menu--with-logo .et_pb_menu__menu > nav > ul > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 31px 0;
+  white-space: nowrap;
+  font-size: 25px;
+}
+
+
+.et_pb_section_3.et_pb_section {
+  padding-top: 91px;
+  padding-bottom: 19px;
+  background-color: #017b46 !important;
+  color: white;
+}
+
+.et_pb_text_inner h2{
+  color: white;
+}
+.et_pb_blurb_description p {
+    color: white;
+}
+.et-pb-icon .et-animated {
+  color: white;
+}
+
+.et_pb_image_wrap span {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keep your existing styles here */
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .et_pb_row.et_pb_row_4.et_pb_row_4col {
+        display: block; /* Display blurb items as a normal block layout */
+    }
+
+    .et_pb_column.et_pb_column_1_4 {
+        width: 100%; /* Each blurb item takes full width */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+}
+
+/* For screens 768px and larger (desktops) */
+@media (min-width: 768px) {
+    .et_pb_row.et_pb_row_4.et_pb_row_4col {
+        display: flex; /* Display blurb items as flex items */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    }
+
+    .et_pb_column.et_pb_column_1_4 {
+        flex: 0 0 auto; /* Allow items to shrink */
+        width: 25%; /* Each blurb item takes 25% of the container */
+        margin-right: 20px; /* Add some space between items */
+    }
+
+    /* Remove margin from the last item to prevent horizontal scrolling overflow */
+    .et_pb_column.et_pb_column_1_4:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
   </style>
     </body>
 </html>
