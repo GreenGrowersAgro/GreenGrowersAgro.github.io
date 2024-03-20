@@ -19463,12 +19463,48 @@ div.et_pb_section.et_pb_section_0_tb_footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Keep your existing styles here */
 
 /* For screens smaller than 768px (phones) */
 @media (max-width: 767px) {
     .et_pb_row.et_pb_row_4.et_pb_row_4col {
-        display: block; /* Display blurb items as a normal block layout */
+        display: flex;
+        flex-direction: column; /* Display blurb items vertically */
+        overflow-y: auto; /* Enable vertical scrolling */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        height: 400px; /* Set a fixed height for the slider */
     }
 
     .et_pb_column.et_pb_column_1_4 {
@@ -19480,21 +19516,7 @@ div.et_pb_section.et_pb_section_0_tb_footer {
 /* For screens 768px and larger (desktops) */
 @media (min-width: 768px) {
     .et_pb_row.et_pb_row_4.et_pb_row_4col {
-        display: flex; /* Display blurb items as flex items */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
-    }
-
-    .et_pb_column.et_pb_column_1_4 {
-        flex: 0 0 auto; /* Allow items to shrink */
-        width: 25%; /* Each blurb item takes 25% of the container */
-        margin-right: 20px; /* Add some space between items */
-    }
-
-    /* Remove margin from the last item to prevent horizontal scrolling overflow */
-    .et_pb_column.et_pb_column_1_4:last-child {
-        margin-right: 0;
+        display: block; /* Display blurb items as a normal block layout */
     }
 }
 
